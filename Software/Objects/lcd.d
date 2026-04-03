@@ -2,7 +2,7 @@
 .\objects\lcd.o: Hardware\LCD\lcd.h
 .\objects\lcd.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\lcd.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\lcd.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\lcd.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\lcd.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\lcd.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -35,6 +35,6 @@
 .\objects\lcd.o: .\Libraries\FWlib\inc\stm32f4xx_dac.h
 .\objects\lcd.o: .\Libraries\FWlib\inc\stm32f4xx_dcmi.h
 .\objects\lcd.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
-.\objects\lcd.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\lcd.o: Hardware\LCD\font.h
-.\objects\lcd.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

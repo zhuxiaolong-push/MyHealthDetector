@@ -2,7 +2,7 @@
 .\objects\com_sys.o: Common\Com_Sys\Com_sys.h
 .\objects\com_sys.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\com_sys.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\com_sys.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\com_sys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\com_sys.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\com_sys.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\com_sys.o: .\Libraries\CMSIS\core_cmSimd.h

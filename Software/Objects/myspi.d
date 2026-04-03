@@ -2,7 +2,7 @@
 .\objects\myspi.o: Driver\SPI\myspi.h
 .\objects\myspi.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\myspi.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\myspi.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\myspi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\myspi.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\myspi.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\myspi.o: .\Libraries\CMSIS\core_cmSimd.h

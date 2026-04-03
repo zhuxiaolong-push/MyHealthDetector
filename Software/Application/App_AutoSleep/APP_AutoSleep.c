@@ -18,7 +18,7 @@ void APP_AutoSleep_Init(void)
 {
     last_activity_time = xTaskGetTickCount();
     is_sleeping = false;
-    auto_sleep_enabled = true;
+    auto_sleep_enabled = false;
     LV_LOG_USER("APP_AutoSleep initialized, timeout=%ds", AUTO_SLEEP_TIMEOUT_MS/1000);
 }
 

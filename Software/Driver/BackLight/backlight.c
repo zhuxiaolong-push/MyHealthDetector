@@ -38,7 +38,7 @@ void Backlight_Init(void)
     TIM_ARRPreloadConfig(TIM3, ENABLE);
     TIM_Cmd(TIM3, ENABLE);
     
-    current_brightness = 80;
+    current_brightness = 100;
 }
 
 void Backlight_SetBrightness(uint8_t percent)

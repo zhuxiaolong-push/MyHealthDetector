@@ -191,7 +191,7 @@ static void page_init(void)
     lv_obj_set_size(sw_auto_sleep, 44, 22);
     lv_obj_set_style_bg_color(sw_auto_sleep, lv_color_hex(0x3a4a6a), LV_PART_MAIN);
     lv_obj_set_style_bg_color(sw_auto_sleep, COLOR_MENU_BTN, LV_PART_INDICATOR);
-    lv_obj_add_state(sw_auto_sleep, LV_STATE_CHECKED);  /* 默认打开 */
+    lv_obj_clear_state(sw_auto_sleep, LV_STATE_CHECKED);  /* 默认关闭 */
     lv_obj_add_event_cb(sw_auto_sleep, switch_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
 
     /* 5. 版本信息（静态文本，填充剩余空间） */
@@ -238,7 +238,8 @@ static void switch_event_cb(lv_event_t *e)
 {
     lv_obj_t *sw = lv_event_get_target(e);
     lv_state_t state = lv_obj_get_state(sw);
-    bool checked = (state & LV_STATE_CHECKED);
+    
+    bool checked = lv_obj_has_state(sw, LV_STATE_CHECKED);
 
     if (sw == sw_wifi) {
         LV_LOG_USER("WiFi %s", checked ? "ON" : "OFF");

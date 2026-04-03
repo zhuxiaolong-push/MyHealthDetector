@@ -3,7 +3,7 @@
 .\objects\com_debug.o: .\Driver\Uart\uart.h
 .\objects\com_debug.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\com_debug.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\com_debug.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\com_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\com_debug.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\com_debug.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\com_debug.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -36,6 +36,6 @@
 .\objects\com_debug.o: .\Libraries\FWlib\inc\stm32f4xx_dac.h
 .\objects\com_debug.o: .\Libraries\FWlib\inc\stm32f4xx_dcmi.h
 .\objects\com_debug.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
-.\objects\com_debug.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\com_debug.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\com_debug.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
+.\objects\com_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\com_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\com_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

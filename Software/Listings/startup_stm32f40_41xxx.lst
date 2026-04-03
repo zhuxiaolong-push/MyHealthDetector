@@ -840,18 +840,19 @@ ARM Macro Assembler    Page 13
   428 0000001C                 END
               00000000 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
-interwork --depend=.\objects\startup_stm32f40_41xxx.d -o.\objects\startup_stm32
-f40_41xxx.o -ID:\keilpackage\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\startup_stm32f40_41xxx.d -o.\objects\startup_stm32f40
+_41xxx.o -I.\RTE\_HealthCheck -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\D
 
 
 
 ARM Macro Assembler    Page 14 
 
 
-STM32F4xx\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSIO
-N SETA 538" --predefine="STM32F407xx SETA 1" --list=.\listings\startup_stm32f40
-_41xxx.lst Libraries\CMSIS\startup_stm32f40_41xxx.s
+rivers\CMSIS\Device\ST\STM32F4xx\Include -IC:\Keil_v5\ARM\CMSIS\Include --prede
+fine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 526" --predefine="
+STM32F407xx SETA 1" --list=.\listings\startup_stm32f40_41xxx.lst Libraries\CMSI
+S\startup_stm32f40_41xxx.s
 
 
 

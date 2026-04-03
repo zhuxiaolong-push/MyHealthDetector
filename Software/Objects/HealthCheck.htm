@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\HealthCheck.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\HealthCheck.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Apr 03 15:22:11 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Apr 03 17:18:14 2026
 <BR><P>
 <H3>Maximum Stack Usage =       1904 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -377,11 +377,9 @@ Global Symbols
 
 <P><STRONG><a name="[5d1]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[5d2]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+<P><STRONG><a name="[5d2]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[5d3]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
-
-<P><STRONG><a name="[5d4]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+<P><STRONG><a name="[5d3]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[10]"></a>SVC_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, port.o(.emb_text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
@@ -399,7 +397,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
 </UL>
-<P><STRONG><a name="[5d5]"></a>vPortGetIPSR</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, port.o(.emb_text), UNUSED)
+<P><STRONG><a name="[5d4]"></a>vPortGetIPSR</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, port.o(.emb_text), UNUSED)
 
 <P><STRONG><a name="[a]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f40_41xxx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
@@ -662,7 +660,7 @@ Global Symbols
 <LI><a href="#[200]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[5d6]"></a>___aeabi_memcpy8$move</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+<P><STRONG><a name="[5d5]"></a>___aeabi_memcpy8$move</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
 
 <P><STRONG><a name="[480]"></a>__aeabi_memcpy</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, memmovea.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memcpy
@@ -677,20 +675,20 @@ Global Symbols
 <LI><a href="#[30e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_draw_label
 </UL>
 
-<P><STRONG><a name="[5d7]"></a>__aeabi_memmove</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+<P><STRONG><a name="[5d6]"></a>__aeabi_memmove</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
 
-<P><STRONG><a name="[5d8]"></a>__aeabi_memmove4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+<P><STRONG><a name="[5d7]"></a>__aeabi_memmove4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
 
-<P><STRONG><a name="[5d9]"></a>__aeabi_memmove8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+<P><STRONG><a name="[5d8]"></a>__aeabi_memmove8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
 
 <P><STRONG><a name="[12e]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[5da]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[5d9]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[5db]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[5da]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[12d]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -701,7 +699,7 @@ Global Symbols
 <LI><a href="#[2fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_bg
 </UL>
 
-<P><STRONG><a name="[5dc]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[5db]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[12f]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -754,7 +752,7 @@ Global Symbols
 <LI><a href="#[53a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_roller_set_options
 </UL>
 
-<P><STRONG><a name="[16a]"></a>strrchr</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, strrchr.o(.text))
+<P><STRONG><a name="[16a]"></a>strrchr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, strrchr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Com_Debug_Init
 </UL>
 
@@ -824,7 +822,7 @@ Global Symbols
 <LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
 </UL>
 
-<P><STRONG><a name="[5dd]"></a>__aeabi_cdcmpeq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, cdcmple.o(.text), UNUSED)
+<P><STRONG><a name="[5dc]"></a>__aeabi_cdcmpeq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, cdcmple.o(.text), UNUSED)
 
 <P><STRONG><a name="[1e8]"></a>__aeabi_cdcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdcmple.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
@@ -843,7 +841,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[1dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SMBus_ReadTemp
 </UL>
 
-<P><STRONG><a name="[5de]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<P><STRONG><a name="[5dd]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 
 <P><STRONG><a name="[271]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
@@ -856,7 +854,7 @@ Global Symbols
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 
-<P><STRONG><a name="[5df]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[5de]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[12b]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
@@ -866,21 +864,21 @@ Global Symbols
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 
-<P><STRONG><a name="[5e0]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[5df]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
 <P><STRONG><a name="[131]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[5e1]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+<P><STRONG><a name="[5e0]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
 
-<P><STRONG><a name="[5e2]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
+<P><STRONG><a name="[5e1]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
 
 <P><STRONG><a name="[13a]"></a>_float_round</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fepilogue.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
 
-<P><STRONG><a name="[5e3]"></a>_float_epilogue</STRONG> (Thumb, 92 bytes, Stack size 4 bytes, fepilogue.o(.text), UNUSED)
+<P><STRONG><a name="[5e2]"></a>_float_epilogue</STRONG> (Thumb, 92 bytes, Stack size 4 bytes, fepilogue.o(.text), UNUSED)
 
 <P><STRONG><a name="[133]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
@@ -931,11 +929,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[5e4]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[5e3]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
-<P><STRONG><a name="[5e5]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[5e4]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[5e6]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[5e5]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
 <P><STRONG><a name="[13f]"></a>APP_AutoSleep_EnterSleep</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, app_autosleep.o(i.APP_AutoSleep_EnterSleep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 872<LI>Call Chain = APP_AutoSleep_EnterSleep &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
@@ -950,7 +948,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AutoSleep_task
 </UL>
 
-<P><STRONG><a name="[142]"></a>APP_AutoSleep_Init</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, app_autosleep.o(i.APP_AutoSleep_Init))
+<P><STRONG><a name="[142]"></a>APP_AutoSleep_Init</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, app_autosleep.o(i.APP_AutoSleep_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 872<LI>Call Chain = APP_AutoSleep_Init &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_log_add
@@ -2420,7 +2418,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[5e7]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[5e6]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
 <P><STRONG><a name="[16b]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
@@ -2432,16 +2430,16 @@ Global Symbols
 <LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT5206_Init
 </UL>
 
-<P><STRONG><a name="[5e8]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[5e7]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
-<P><STRONG><a name="[5e9]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[5e8]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
 <P><STRONG><a name="[1fc]"></a>__0sprintf</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
 <LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[5ea]"></a>__1sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+<P><STRONG><a name="[5e9]"></a>__1sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
 
 <P><STRONG><a name="[5bf]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
@@ -2450,9 +2448,9 @@ Global Symbols
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_display
 </UL>
 
-<P><STRONG><a name="[5eb]"></a>__c89sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+<P><STRONG><a name="[5ea]"></a>__c89sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
 
-<P><STRONG><a name="[5ec]"></a>sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+<P><STRONG><a name="[5eb]"></a>sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
 
 <P><STRONG><a name="[1e6]"></a>__hardfp_sqrt</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, sqrt.o(i.__hardfp_sqrt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = __hardfp_sqrt &rArr; _dsqrt &rArr; _double_round
@@ -2463,11 +2461,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
 </UL>
 
-<P><STRONG><a name="[5ed]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[5ec]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[5ee]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[5ed]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[5ef]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[5ee]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
 <P><STRONG><a name="[1fd]"></a>__set_errno</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, errno.o(i.__set_errno))
 <BR><BR>[Called By]<UL><LI><a href="#[1e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
@@ -3133,7 +3131,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[496]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_init
 </UL>
 
-<P><STRONG><a name="[25f]"></a>_lv_obj_style_state_compare</STRONG> (Thumb, 558 bytes, Stack size 48 bytes, lv_obj_style.o(i._lv_obj_style_state_compare))
+<P><STRONG><a name="[25f]"></a>_lv_obj_style_state_compare</STRONG> (Thumb, 556 bytes, Stack size 48 bytes, lv_obj_style.o(i._lv_obj_style_state_compare))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = _lv_obj_style_state_compare &rArr; lv_style_get_prop
 </UL>
 <BR>[Calls]<UL><LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_style_get_prop
@@ -4119,7 +4117,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[496]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_init
 </UL>
 
-<P><STRONG><a name="[30e]"></a>lv_draw_label</STRONG> (Thumb, 1440 bytes, Stack size 264 bytes, lv_draw_label.o(i.lv_draw_label))
+<P><STRONG><a name="[30e]"></a>lv_draw_label</STRONG> (Thumb, 1436 bytes, Stack size 264 bytes, lv_draw_label.o(i.lv_draw_label))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1376<LI>Call Chain = lv_draw_label &rArr; lv_txt_get_size &rArr; _lv_txt_get_next_line &rArr; lv_txt_get_next_word &rArr; lv_font_get_glyph_width &rArr; lv_font_get_glyph_dsc &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_log_add
@@ -4557,8 +4555,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 1280<LI>Call Chain = lv_dropdown_close &rArr; lv_obj_clear_state &rArr; lv_obj_set_state &rArr; _lv_obj_style_create_transition &rArr; lv_anim_start &rArr; _lv_ll_ins_head &rArr; lv_mem_alloc &rArr; lv_tlsf_malloc &rArr; block_prepare_used &rArr; block_trim_free &rArr; block_insert &rArr; insert_free_block &rArr; align_ptr &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[409]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_flag
-<LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_send
 <LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
+<LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_send
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_event
 <LI><a href="#[404]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_release_handler
@@ -6206,10 +6204,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[409]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_flag
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_flag
+<LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
 <LI><a href="#[467]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_state
 <LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_send
 <LI><a href="#[468]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_parent
-<LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_ins_head
 <LI><a href="#[4c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_clear_history
 <LI><a href="#[4c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_refr_main_header_mode
@@ -6538,7 +6536,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_state
 </UL>
-<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
+<BR>[Called By]<UL><LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;page_init
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
 <LI><a href="#[3d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;indev_encoder_proc
 <LI><a href="#[4c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_set_page
 <LI><a href="#[2a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_close
@@ -7508,17 +7507,18 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[50d]"></a>lv_obj_has_state</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lv_obj.o(i.lv_obj_has_state))
-<BR><BR>[Called By]<UL><LI><a href="#[495]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_hit_test
+<BR><BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;switch_event_cb
+<LI><a href="#[495]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_hit_test
 </UL>
 
 <P><STRONG><a name="[495]"></a>lv_obj_hit_test</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, lv_obj_pos.o(i.lv_obj_hit_test))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = lv_obj_hit_test &rArr; lv_event_send &rArr; event_send_core &rArr;  event_send_core (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_flag
+<BR>[Calls]<UL><LI><a href="#[50d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_state
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_flag
 <LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_send
 <LI><a href="#[206]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_area_is_point_on
 <LI><a href="#[490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_click_area
-<LI><a href="#[50d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_state
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_indev_search_obj
 </UL>
@@ -10716,6 +10716,7 @@ Local Symbols
 <LI><a href="#[281]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btn_create
 <LI><a href="#[580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_switch_create
 <LI><a href="#[53f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_slider_create
+<LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
 <LI><a href="#[467]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_state
 <LI><a href="#[416]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_bar_set_value
 <LI><a href="#[41b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_bar_set_range
@@ -10736,12 +10737,13 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> gui_settings.o(i.page_init)
 </UL>
-<P><STRONG><a name="[c9]"></a>switch_event_cb</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, gui_settings.o(i.switch_event_cb))
+<P><STRONG><a name="[c9]"></a>switch_event_cb</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, gui_settings.o(i.switch_event_cb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 904<LI>Call Chain = switch_event_cb &rArr; APP_AutoSleep_SetEnable &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[29e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_target
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_log_add
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_AutoSleep_SetEnable
+<LI><a href="#[50d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_state
 <LI><a href="#[370]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_state
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> gui_settings.o(i.page_init)
@@ -11047,12 +11049,12 @@ Local Symbols
 <P><STRONG><a name="[3d7]"></a>indev_encoder_proc</STRONG> (Thumb, 782 bytes, Stack size 32 bytes, lv_indev.o(i.indev_encoder_proc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1304<LI>Call Chain = indev_encoder_proc &rArr; lv_obj_clear_state &rArr; lv_obj_set_state &rArr; _lv_obj_style_create_transition &rArr; lv_anim_start &rArr; _lv_ll_ins_head &rArr; lv_mem_alloc &rArr; lv_tlsf_malloc &rArr; block_prepare_used &rArr; block_trim_free &rArr; block_insert &rArr; insert_free_block &rArr; align_ptr &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_flag
+<BR>[Calls]<UL><LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_flag
 <LI><a href="#[209]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tick_get
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tick_elaps
 <LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_send
 <LI><a href="#[3da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_is_editable
-<LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
 <LI><a href="#[3d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;indev_reset_check
 <LI><a href="#[2a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_set_editing
 <LI><a href="#[3d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_send_data
@@ -11342,6 +11344,7 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 1440<LI>Call Chain = lv_obj_event &rArr; lv_obj_draw &rArr; lv_draw_mask_radius_init &rArr; circ_calc_aa4 &rArr; lv_mem_buf_get &rArr; lv_mem_realloc &rArr; lv_mem_alloc &rArr; lv_tlsf_malloc &rArr; block_prepare_used &rArr; block_trim_free &rArr; block_insert &rArr; insert_free_block &rArr; align_ptr &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_current_target
+<LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
 <LI><a href="#[467]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_state
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_flag
 <LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_indev_get_act
@@ -11358,7 +11361,6 @@ Local Symbols
 <LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_scroll_left
 <LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_scroll_dir
 <LI><a href="#[3da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_is_editable
-<LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
 <LI><a href="#[2a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_indev_get_scroll_obj
 <LI><a href="#[2a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_group
 <LI><a href="#[2a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_indev_get_type
@@ -11467,8 +11469,8 @@ Local Symbols
 <LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_obj_style_state_compare
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_obj_style_create_transition
 </UL>
-<BR>[Called By]<UL><LI><a href="#[467]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_state
-<LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
+<BR>[Called By]<UL><LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_clear_state
+<LI><a href="#[467]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_state
 </UL>
 
 <P><STRONG><a name="[385]"></a>scrollbar_init_draw_dsc</STRONG> (Thumb, 260 bytes, Stack size 24 bytes, lv_obj.o(i.scrollbar_init_draw_dsc))
@@ -12004,7 +12006,7 @@ Local Symbols
 <LI><a href="#[516]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_style_change_core
 </UL>
 
-<P><STRONG><a name="[74]"></a>trans_anim_cb</STRONG> (Thumb, 324 bytes, Stack size 32 bytes, lv_obj_style.o(i.trans_anim_cb))
+<P><STRONG><a name="[74]"></a>trans_anim_cb</STRONG> (Thumb, 330 bytes, Stack size 32 bytes, lv_obj_style.o(i.trans_anim_cb))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1160<LI>Call Chain = trans_anim_cb &rArr; lv_obj_refresh_style &rArr; lv_obj_refresh_ext_draw_size &rArr; lv_obj_allocate_spec_attr &rArr; lv_mem_alloc &rArr; lv_tlsf_malloc &rArr; block_prepare_used &rArr; block_trim_free &rArr; block_insert &rArr; insert_free_block &rArr; align_ptr &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refresh_style
@@ -12156,7 +12158,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[20c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_refr_areas
 </UL>
 
-<P><STRONG><a name="[534]"></a>lv_refr_area_part</STRONG> (Thumb, 340 bytes, Stack size 80 bytes, lv_refr.o(i.lv_refr_area_part))
+<P><STRONG><a name="[534]"></a>lv_refr_area_part</STRONG> (Thumb, 338 bytes, Stack size 80 bytes, lv_refr.o(i.lv_refr_area_part))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1664<LI>Call Chain = lv_refr_area_part &rArr; lv_draw_img &rArr; decode_and_draw &rArr; show_error &rArr; lv_draw_label &rArr; lv_txt_get_size &rArr; _lv_txt_get_next_line &rArr; lv_txt_get_next_word &rArr; lv_font_get_glyph_width &rArr; lv_font_get_glyph_dsc &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_log_add
@@ -14521,7 +14523,7 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lv_win.o(.constdata)
 </UL>
-<P><STRONG><a name="[3b1]"></a>get_glyph_dsc_id</STRONG> (Thumb, 286 bytes, Stack size 40 bytes, lv_font_fmt_txt.o(i.get_glyph_dsc_id))
+<P><STRONG><a name="[3b1]"></a>get_glyph_dsc_id</STRONG> (Thumb, 284 bytes, Stack size 40 bytes, lv_font_fmt_txt.o(i.get_glyph_dsc_id))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = get_glyph_dsc_id &rArr; _lv_utils_bsearch
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_utils_bsearch
@@ -15455,7 +15457,7 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lv_btnmatrix.o(.constdata)
 </UL>
-<P><STRONG><a name="[107]"></a>lv_btnmatrix_event</STRONG> (Thumb, 1286 bytes, Stack size 40 bytes, lv_btnmatrix.o(i.lv_btnmatrix_event))
+<P><STRONG><a name="[107]"></a>lv_btnmatrix_event</STRONG> (Thumb, 1282 bytes, Stack size 40 bytes, lv_btnmatrix.o(i.lv_btnmatrix_event))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1792<LI>Call Chain = lv_btnmatrix_event &rArr; draw_main &rArr; lv_draw_label &rArr; lv_txt_get_size &rArr; _lv_txt_get_next_line &rArr; lv_txt_get_next_word &rArr; lv_font_get_glyph_width &rArr; lv_font_get_glyph_dsc &rArr; _lv_log_add &rArr; lv_snprintf &rArr; _vsnprintf &rArr;  _vsnprintf (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[29e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_target
@@ -17355,7 +17357,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[1fb]"></a>_printf_core</STRONG> (Thumb, 1704 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
+<P><STRONG><a name="[1fb]"></a>_printf_core</STRONG> (Thumb, 1744 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 <LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 <LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding

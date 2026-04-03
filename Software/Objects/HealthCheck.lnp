@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp.sp
+--cpu=Cortex-M4.fp
 ".\objects\main.o"
 ".\objects\app_task.o"
 ".\objects\app_autosleep.o"

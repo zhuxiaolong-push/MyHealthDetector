@@ -1,6 +1,6 @@
 .\objects\key.o: Hardware\KEY\Key.c
 .\objects\key.o: Hardware\KEY\key.h
-.\objects\key.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\key.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\key.o: .\Libraries\CMSIS\core_cm4.h
 .\objects\key.o: .\Libraries\CMSIS\core_cmInstr.h
@@ -37,7 +37,7 @@
 .\objects\key.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
 .\objects\key.o: .\Common\Com_Delay\Com_Delay.h
 .\objects\key.o: .\Middle\FreeRTOS\include\FreeRTOS.h
-.\objects\key.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\key.o: .\User\FreeRTOSConfig.h
 .\objects\key.o: .\Middle\FreeRTOS\include\projdefs.h
 .\objects\key.o: .\Middle\FreeRTOS\include\portable.h
@@ -56,15 +56,15 @@
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\examples\porting\../../lv_conf.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_types.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_timer.h
-.\objects\key.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_math.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_mem.h
-.\objects\key.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
+.\objects\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_async.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_anim_timeline.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_anim.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_printf.h
-.\objects\key.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal_disp.h
 .\objects\key.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal.h
@@ -177,7 +177,7 @@
 .\objects\key.o: .\Application\App_task\App_task.h
 .\objects\key.o: .\Common\Com_Debug\Com_Debug.h
 .\objects\key.o: .\Driver\Uart\uart.h
-.\objects\key.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\key.o: .\Application\App_GUI\GUI_main\GUI_main.h
 .\objects\key.o: .\Application\App_GUI\GUI_Settings\GUI_Settings.h
 .\objects\key.o: .\Application\App_AutoSleep\APP_AutoSleep.h

@@ -1,7 +1,7 @@
 .\objects\main.o: User\main.c
 .\objects\main.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\main.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\main.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\main.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\main.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -36,13 +36,13 @@
 .\objects\main.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
 .\objects\main.o: .\Common\Com_Debug\Com_Debug.h
 .\objects\main.o: .\Driver\Uart\uart.h
-.\objects\main.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\main.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: .\Hardware\LCD\LCD.h
 .\objects\main.o: .\Application\App_task\App_task.h
 .\objects\main.o: .\Middle\FreeRTOS\include\FreeRTOS.h
-.\objects\main.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\main.o: .\User\FreeRTOSConfig.h
 .\objects\main.o: .\Middle\FreeRTOS\include\projdefs.h
 .\objects\main.o: .\Middle\FreeRTOS\include\portable.h
@@ -59,7 +59,7 @@
 .\objects\main.o: .\Middle\LVGL\GUI\lvgl\examples\porting\../../lv_conf.h
 .\objects\main.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_types.h
 .\objects\main.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_timer.h
-.\objects\main.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_math.h
 .\objects\main.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_mem.h
 .\objects\main.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_async.h
