@@ -17,7 +17,7 @@ static void page_init(void);
 static void back_event_cb(lv_event_t *e);
 static void slider_event_cb(lv_event_t *e);
 static void switch_event_cb(lv_event_t *e);
-static void create_setting_item(lv_obj_t *parent, const char *label, lv_obj_t **control, uint8_t type, uint8_t y_pos);
+//static void create_setting_item(lv_obj_t *parent, const char *label, lv_obj_t **control, uint8_t type, uint8_t y_pos);
 
 /* ==================== 公共函数实现 ==================== */
 void GUI_Settings_page_Init(void)
