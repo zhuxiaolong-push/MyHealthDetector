@@ -5,21 +5,21 @@
 /* ==================== 静态变量 ==================== */
 static lv_obj_t *ui_SettingsPage = NULL;
 static lv_obj_t *back_btn = NULL;
-
-/* 设置项对象 */
 static lv_obj_t *slider_brightness = NULL;
 static lv_obj_t *sw_wifi = NULL;
 static lv_obj_t *sw_sound = NULL;
 static lv_obj_t *sw_auto_sleep = NULL;
+
+static int32_t pending_brightness = 100;
+static bool is_pressed = false;  // 标记是否正在按压滑动
 
 /* ==================== 前向声明 ==================== */
 static void page_init(void);
 static void back_event_cb(lv_event_t *e);
 static void slider_event_cb(lv_event_t *e);
 static void switch_event_cb(lv_event_t *e);
-//static void create_setting_item(lv_obj_t *parent, const char *label, lv_obj_t **control, uint8_t type, uint8_t y_pos);
 
-/* ==================== 公共函数实现 ==================== */
+/* ==================== 公共函数 ==================== */
 void GUI_Settings_page_Init(void)
 {
     if (ui_SettingsPage != NULL) return;
@@ -53,7 +53,6 @@ static void page_init(void)
     lv_obj_set_style_radius(status_bar, 0, LV_PART_MAIN);
     lv_obj_clear_flag(status_bar, LV_OBJ_FLAG_SCROLLABLE);
 
-    /* 标题 */
     lv_obj_t *title = lv_label_create(status_bar);
     lv_label_set_text(title, "Settings");
     lv_obj_set_style_text_font(title, FONT_TITLE, LV_PART_MAIN);
@@ -79,18 +78,16 @@ static void page_init(void)
 
     /* ==================== 设置项容器 ==================== */
     lv_obj_t *container = lv_obj_create(ui_SettingsPage);
-    lv_obj_set_size(container, 310, 240 - STATUS_BAR_HEIGHT - 45);  /* 留45px给返回按钮 */
+    lv_obj_set_size(container, 310, 240 - STATUS_BAR_HEIGHT - 45);
     lv_obj_set_pos(container, 5, STATUS_BAR_HEIGHT + 42);
     lv_obj_set_style_bg_color(container, COLOR_PANEL_BG, LV_PART_MAIN);
     lv_obj_set_style_pad_all(container, 10, LV_PART_MAIN);
     lv_obj_set_style_border_width(container, 0, LV_PART_MAIN);
     lv_obj_set_style_radius(container, 8, LV_PART_MAIN);
-    lv_obj_clear_flag(container, LV_OBJ_FLAG_SCROLLABLE);  /* 禁止滚动 */
+    lv_obj_clear_flag(container, LV_OBJ_FLAG_SCROLLABLE);
 
-    /* 设置项高度和间距计算 */
     #define ITEM_HEIGHT     34
     #define ITEM_SPACING    8
-    #define LABEL_WIDTH     100
 
     /* 1. 亮度调节 - 滑动条 */
     lv_obj_t *item1 = lv_obj_create(container);
@@ -101,21 +98,23 @@ static void page_init(void)
     lv_obj_set_style_border_width(item1, 0, LV_PART_MAIN);
     lv_obj_clear_flag(item1, LV_OBJ_FLAG_SCROLLABLE);
 
-    /* 标签 */
     lv_obj_t *label1 = lv_label_create(item1);
     lv_label_set_text(label1, LV_SYMBOL_IMAGE " Brightness");
     lv_obj_set_style_text_font(label1, FONT_MENU, LV_PART_MAIN);
     lv_obj_set_style_text_color(label1, COLOR_TEXT_LIGHT, LV_PART_MAIN);
     lv_obj_align(label1, LV_ALIGN_LEFT_MID, 10, 0);
 
-    /* 滑动条 */
+    /* 滑动条 - 默认100，带动画 */
     slider_brightness = lv_slider_create(item1);
     lv_obj_set_size(slider_brightness, 140, 8);
     lv_obj_align(slider_brightness, LV_ALIGN_RIGHT_MID, -10, 0);
     lv_slider_set_range(slider_brightness, 10, 100);
-    lv_slider_set_value(slider_brightness, 80, LV_ANIM_OFF);
-    uint8_t current_brightness = Backlight_GetBrightness();
-    lv_slider_set_value(slider_brightness, current_brightness, LV_ANIM_OFF);
+    
+    /* 视觉动画：从左边滑到右边 */
+    lv_slider_set_value(slider_brightness, 10, LV_ANIM_OFF);
+    lv_slider_set_value(slider_brightness, 100, LV_ANIM_ON);
+    pending_brightness = 100;
+
     lv_obj_set_style_bg_color(slider_brightness, lv_color_hex(0x2d3d5d), LV_PART_MAIN);
     lv_obj_set_style_bg_color(slider_brightness, COLOR_MENU_BTN, LV_PART_INDICATOR);
     lv_obj_set_style_radius(slider_brightness, 4, LV_PART_MAIN);
@@ -124,7 +123,11 @@ static void page_init(void)
     lv_obj_set_style_pad_ver(slider_brightness, 6, LV_PART_KNOB);
     lv_obj_set_style_bg_color(slider_brightness, COLOR_TEXT_LIGHT, LV_PART_KNOB);
     lv_obj_set_style_radius(slider_brightness, LV_RADIUS_CIRCLE, LV_PART_KNOB);
-    lv_obj_add_event_cb(slider_brightness, slider_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
+    
+    /* 关键：注册3个事件，精准控制写入时机 */
+    lv_obj_add_event_cb(slider_brightness, slider_event_cb, LV_EVENT_VALUE_CHANGED, NULL);  // 值变化
+    lv_obj_add_event_cb(slider_brightness, slider_event_cb, LV_EVENT_PRESSED, NULL);      // 按下
+    lv_obj_add_event_cb(slider_brightness, slider_event_cb, LV_EVENT_RELEASED, NULL);     // 释放（关键）
 
     /* 2. WIFI开关 */
     lv_obj_t *item2 = lv_obj_create(container);
@@ -146,7 +149,7 @@ static void page_init(void)
     lv_obj_set_size(sw_wifi, 44, 22);
     lv_obj_set_style_bg_color(sw_wifi, lv_color_hex(0x3a4a6a), LV_PART_MAIN);
     lv_obj_set_style_bg_color(sw_wifi, COLOR_MENU_BTN, LV_PART_INDICATOR);
-    lv_obj_add_state(sw_wifi, LV_STATE_CHECKED);  /* 默认打开 */
+    lv_obj_add_state(sw_wifi, LV_STATE_CHECKED);
     lv_obj_add_event_cb(sw_wifi, switch_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
 
     /* 3. 提示音开关 */
@@ -171,7 +174,7 @@ static void page_init(void)
     lv_obj_set_style_bg_color(sw_sound, COLOR_MENU_BTN, LV_PART_INDICATOR);
     lv_obj_add_event_cb(sw_sound, switch_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
 
-    /* 4. 自动休眠开关 */
+    /* 4. 自动休眠开关 - 默认关闭 */
     lv_obj_t *item4 = lv_obj_create(container);
     lv_obj_set_size(item4, 290, ITEM_HEIGHT);
     lv_obj_set_pos(item4, 0, (ITEM_HEIGHT + ITEM_SPACING) * 3);
@@ -191,10 +194,10 @@ static void page_init(void)
     lv_obj_set_size(sw_auto_sleep, 44, 22);
     lv_obj_set_style_bg_color(sw_auto_sleep, lv_color_hex(0x3a4a6a), LV_PART_MAIN);
     lv_obj_set_style_bg_color(sw_auto_sleep, COLOR_MENU_BTN, LV_PART_INDICATOR);
-    lv_obj_clear_state(sw_auto_sleep, LV_STATE_CHECKED);  /* 默认关闭 */
+    lv_obj_clear_state(sw_auto_sleep, LV_STATE_CHECKED);
     lv_obj_add_event_cb(sw_auto_sleep, switch_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
 
-    /* 5. 版本信息（静态文本，填充剩余空间） */
+    /* 5. 版本信息 */
     lv_obj_t *item5 = lv_obj_create(container);
     lv_obj_set_size(item5, 290, ITEM_HEIGHT);
     lv_obj_set_pos(item5, 0, (ITEM_HEIGHT + ITEM_SPACING) * 4);
@@ -220,38 +223,54 @@ static void page_init(void)
 
 static void back_event_cb(lv_event_t *e)
 {
-    LV_LOG_USER("Back to HomePage");
+    LV_UNUSED(e);
+    
+    /* 如果正在按压中返回，先写入当前值 */
+    if (is_pressed) {
+        Backlight_SetBrightness((uint8_t)pending_brightness);
+        is_pressed = false;
+    }
+    
     extern void GUI_Load_HomePage(void);
     GUI_Load_HomePage();
 }
 
+/* 滑动条事件 - 精准控制：只在释放时写硬件 */
 static void slider_event_cb(lv_event_t *e)
 {
     lv_obj_t *slider = lv_event_get_target(e);
-    int32_t val = lv_slider_get_value(slider);
-    LV_LOG_USER("Brightness changed to %d%%", val);
-    // 设置背光亮度
-    Backlight_SetBrightness((uint8_t)val);
+    lv_event_code_t code = lv_event_get_code(e);
+    
+    if (code == LV_EVENT_PRESSED) {
+        is_pressed = true;  // 标记开始滑动
+    }
+    else if (code == LV_EVENT_VALUE_CHANGED) {
+        /* 滑动过程中：只记录值，绝不写硬件 */
+        pending_brightness = lv_slider_get_value(slider);
+        /* 可选：如果需要实时预览，在这里加，但会卡 */
+        /* Backlight_SetBrightness((uint8_t)pending_brightness); */
+    }
+    else if (code == LV_EVENT_RELEASED) {
+        /* 手指抬起：写一次硬件 */
+        is_pressed = false;
+        Backlight_SetBrightness((uint8_t)pending_brightness);
+        LV_LOG_USER("Brightness set to %d%%", pending_brightness);
+    }
 }
 
 static void switch_event_cb(lv_event_t *e)
 {
     lv_obj_t *sw = lv_event_get_target(e);
-    lv_state_t state = lv_obj_get_state(sw);
-    
     bool checked = lv_obj_has_state(sw, LV_STATE_CHECKED);
 
     if (sw == sw_wifi) {
         LV_LOG_USER("WiFi %s", checked ? "ON" : "OFF");
-        /* 实际的WIFI开关代码 */
     }
     else if (sw == sw_sound) {
         LV_LOG_USER("Sound %s", checked ? "ON" : "OFF");
-        /* 实际的提示音开关代码 */
     }
     else if (sw == sw_auto_sleep) {
         LV_LOG_USER("Auto Sleep %s", checked ? "ON" : "OFF");
-        /* 实际的自动休眠开关代码 */
         APP_AutoSleep_SetEnable(checked);
     }
 }

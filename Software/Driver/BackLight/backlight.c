@@ -28,7 +28,7 @@ void Backlight_Init(void)
     TIM_OCStructInit(&oc_init);
     oc_init.TIM_OCMode = TIM_OCMode_PWM1;
     oc_init.TIM_OutputState = TIM_OutputState_Enable;
-    oc_init.TIM_Pulse = 2720;  // 80% * 3360 ≈ 2720
+    oc_init.TIM_Pulse = 3360;  // 100% * 3360 ≈ 3360
     oc_init.TIM_OCPolarity = TIM_OCPolarity_High;
     TIM_OC3Init(TIM3, &oc_init);
     

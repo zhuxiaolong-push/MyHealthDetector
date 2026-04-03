@@ -26,6 +26,15 @@ void Gui_task(void *pvParameters);
 TaskHandle_t AutoSleep_handle;
 void AutoSleep_task(void *pvParameters);
 
+//背光更新任务（新增：专门处理硬件写入，避免阻塞GUI）
+#define BACKLIGHT_TASK_STACK    256
+#define BACKLIGHT_TASK_PRIORITY 2
+TaskHandle_t backlight_task_handle;
+void Backlight_task(void *pvParameters);
+
+//背光控制队列（长度为1，只存最新亮度值）
+QueueHandle_t backlight_queue = NULL;
+
 void vApplicationTickHook(void)
 {
     lv_tick_inc(1);
@@ -38,6 +47,7 @@ void App_task_init(void)
     Key_Init();
     APP_AutoSleep_Init();
     Backlight_Init(); 
+    
     xTaskCreate((TaskFunction_t)start_task,               
             (char *)"start_task",                    
             (configSTACK_DEPTH_TYPE)START_TASK_STACK, 
@@ -51,6 +61,9 @@ void App_task_init(void)
 void start_task(void *pvParameters)
 {
     taskENTER_CRITICAL();
+
+    //创建背光控制队列（必须在任务创建前）
+    backlight_queue = xQueueCreate(1, sizeof(uint8_t));
 
     xTaskCreate((TaskFunction_t)Gui_task,
                 (char *)"Gui_task",
@@ -73,6 +86,14 @@ void start_task(void *pvParameters)
             (void *)NULL,
             (UBaseType_t)AUTO_SLEEP_TASK_PRIORITY,
             (TaskHandle_t *)&AutoSleep_handle);
+
+    //创建背光更新任务（新增）
+    xTaskCreate((TaskFunction_t)Backlight_task,
+                (char *)"backlight_task",
+                (configSTACK_DEPTH_TYPE)BACKLIGHT_TASK_STACK,
+                (void *)NULL,
+                (UBaseType_t)BACKLIGHT_TASK_PRIORITY,
+                (TaskHandle_t *)&backlight_task_handle);
 
     taskEXIT_CRITICAL();
 
@@ -116,6 +137,22 @@ void AutoSleep_task(void *pvParameters)
 
         if (idle_time >= pdMS_TO_TICKS(60000)) {
             APP_AutoSleep_EnterSleep();
+        }
+    }
+}
+
+//背光更新任务（新增：后台执行硬件写入，绝不阻塞GUI）
+void Backlight_task(void *pvParameters)
+{
+    uint8_t brightness;
+    
+    (void)pvParameters;
+    
+    for (;;) {
+        // 无限期等待队列消息（有亮度更新时才执行）
+        if (xQueueReceive(backlight_queue, &brightness, portMAX_DELAY) == pdTRUE) {
+            // 即使这里耗时，也只阻塞本任务，不影响GUI任务（优先级5 > 2）
+            Backlight_SetBrightness(brightness);
         }
     }
 }
