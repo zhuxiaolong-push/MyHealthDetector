@@ -1,9 +1,9 @@
 /*
  * @Author: 朱晓龙
  * @Date: 2026-03-16 23:55:18
- * @LastEditTime: 2026-03-24 11:36:33
+ * @LastEditTime: 2026-04-07 11:36:33
  * @LastEditors:朱晓龙
- * @Description: 
+ * @Description: 毕设
  * @FilePath: \Software\User\main.c
  * 可以输入预定的版权声明、个性签名、空行等
  */
@@ -37,7 +37,6 @@ int main(void)
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
 	SysTick_Config(SystemCoreClock / 1000);
 	delay_init();
-    W25Q16_Init();
     Com_Debug_Init();
 	Power_Start(); 
 	lv_init();	
@@ -54,7 +53,7 @@ int main(void)
 	}
 }
 
-// 按键按下后，拉高 PD15，程序开机
+// 按键按下后，拉高 PD15，程序开机,中断入口在key.c中
 void Power_Start(void) 
 {
     GPIO_InitTypeDef GPIO_InitStructure;

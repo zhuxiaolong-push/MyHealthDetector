@@ -71,29 +71,6 @@ void Key_Init(void) {
 
     gpio_init.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;
     GPIO_Init(GPIOC, &gpio_init);
-
-    // 配置电源键 PD14 为输入上拉
-    gpio_init.GPIO_Pin = POWER_KEY_PIN;
-    GPIO_Init(POWER_KEY_PORT, &gpio_init);
-
-    // 配置电源键外部中断（下降沿触发）
-    SYSCFG_EXTILineConfig(EXTI_PortSourceGPIOD, EXTI_PinSource14);
-
-    EXTI_InitTypeDef exti_init;
-    EXTI_StructInit(&exti_init);
-    exti_init.EXTI_Line = POWER_KEY_EXTI_LINE;
-    exti_init.EXTI_Mode = EXTI_Mode_Interrupt;
-    exti_init.EXTI_Trigger = EXTI_Trigger_Falling;
-    exti_init.EXTI_LineCmd = ENABLE;
-    EXTI_Init(&exti_init);
-
-    // NVIC 配置
-    NVIC_InitTypeDef nvic_init;
-    nvic_init.NVIC_IRQChannel = POWER_KEY_IRQn;
-    nvic_init.NVIC_IRQChannelPreemptionPriority = 5;
-    nvic_init.NVIC_IRQChannelSubPriority = 0;
-    nvic_init.NVIC_IRQChannelCmd = ENABLE;
-    NVIC_Init(&nvic_init);
 }
 
 // 电源键中断服务程序

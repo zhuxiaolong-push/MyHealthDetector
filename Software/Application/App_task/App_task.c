@@ -47,7 +47,7 @@ void App_task_init(void)
     Key_Init();
     APP_AutoSleep_Init();
     Backlight_Init(); 
-    
+    W25Q16_Init();
     xTaskCreate((TaskFunction_t)start_task,               
             (char *)"start_task",                    
             (configSTACK_DEPTH_TYPE)START_TASK_STACK, 
@@ -62,7 +62,7 @@ void start_task(void *pvParameters)
 {
     taskENTER_CRITICAL();
 
-    //创建背光控制队列（必须在任务创建前）
+    //创建背光控制队列
     backlight_queue = xQueueCreate(1, sizeof(uint8_t));
 
     xTaskCreate((TaskFunction_t)Gui_task,
@@ -87,7 +87,7 @@ void start_task(void *pvParameters)
             (UBaseType_t)AUTO_SLEEP_TASK_PRIORITY,
             (TaskHandle_t *)&AutoSleep_handle);
 
-    //创建背光更新任务（新增）
+    //创建背光更新任务
     xTaskCreate((TaskFunction_t)Backlight_task,
                 (char *)"backlight_task",
                 (configSTACK_DEPTH_TYPE)BACKLIGHT_TASK_STACK,
