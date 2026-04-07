@@ -5,6 +5,7 @@
 #include "GUI_Common.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "GUI_about.h"
 
 /* ==================== 心率测量状态 ==================== */
 typedef enum {

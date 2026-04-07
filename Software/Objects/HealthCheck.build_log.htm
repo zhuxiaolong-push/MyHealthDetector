@@ -27,24 +27,17 @@ Project File Date:  04/03/2026
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'HealthCheck'
-compiling main.c...
-.\Driver\BackLight\backlight.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-.\Hardware\KEY\Key.h(62): warning:  #1-D: last line of file ends without a newline
-  #endif
-User\main.c: 2 warnings, 0 errors
 compiling App_task.c...
 .\Driver\BackLight\backlight.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
-.\Hardware\KEY\key.h(62): warning:  #1-D: last line of file ends without a newline
-  #endif
-Application\App_task\App_task.c(158): warning:  #1-D: last line of file ends without a newline
-  }
-Application\App_task\App_task.c: 3 warnings, 0 errors
+Application\App_task\App_task.c: 1 warning, 0 errors
 linking...
-Program Size: Code=195768 RO-data=255304 RW-data=1004 ZI-data=115012  
-FromELF: creating hex file...
-".\Objects\HealthCheck.axf" - 0 Error(s), 5 Warning(s).
+.\Objects\HealthCheck.axf: Error: L6218E: Undefined symbol Key_ResetPowerState (referred from gui_power.o).
+.\Objects\HealthCheck.axf: Error: L6218E: Undefined symbol Key_ResetState (referred from gui_heartrate.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+".\Objects\HealthCheck.axf" - 2 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -58,7 +51,8 @@ Package Vendor: Keil
   C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:08
+Target not created.
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

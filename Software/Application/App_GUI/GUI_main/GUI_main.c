@@ -32,14 +32,16 @@ static void info_panel_init(lv_obj_t *parent);
 /* ==================== 菜单按钮事件回调 ==================== */
 static void on_heart_rate_click(lv_event_t *e) {
     LV_LOG_USER("Navigate to: Heart Rate Measurement");
-    Key_SetActivePage(KEY_PAGE_HEART_RATE);
+    extern void App_SetPage(uint8_t page);
+    App_SetPage(KEY_PAGE_HEART_RATE);
     GUI_Load_HeartRatePage();
 
 }
 
 static void on_temperature_click(lv_event_t *e) {
     LV_LOG_USER("Navigate to: Temperature Measurement");
-    Key_SetActivePage(KEY_PAGE_TEMPERATURE);
+    extern void App_SetPage(uint8_t page);
+    App_SetPage(KEY_PAGE_TEMPERATURE);
     GUI_Load_TemperaturePage();
 }
 

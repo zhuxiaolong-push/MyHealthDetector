@@ -6,8 +6,6 @@
 #include "stm32f4xx_exti.h"
 #include "stm32f4xx_syscfg.h"
 #include "Com_Delay.h"
-
-// FreeRTOS 头文件必须按顺序包含
 #include "FreeRTOS.h"
 #include "semphr.h"
 
@@ -44,19 +42,20 @@ typedef enum {
     KEY_STATE_LONG_PRESS_DONE   // 长按已触发（结束态）
 } KeyState_t;
 
+extern SemaphoreHandle_t key_semaphore;
+
 // ========== 函数声明 ==========
 
-// 初始化和任务
+// 硬件初始化
 void Key_Init(void);
-void Key_Detect_Task(void *pvParameters);
 
-// 兼容层（保留原函数）
-KeyNum_t Key_GetNum(void);
-KeyNum_t Key_Scan(void);
+// 底层读取
+uint8_t Key_IsPressed(KeyNum_t key);
+uint8_t PowerKey_IsPressed(void);
+KeyNum_t Key_Scan(void);  // 扫描所有按键，返回按下的键
 
-// 状态管理
-void Key_ResetState(void);
-void Key_SetActivePage(uint8_t page_type);
-void Key_ResetPowerState(void);     // 供关机界面调用
+// 电源键信号量（在 App_task.c 中定义，这里声明为外部）
+extern SemaphoreHandle_t key_semaphore;
+
 
 #endif

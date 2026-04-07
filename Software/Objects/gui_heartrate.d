@@ -134,7 +134,7 @@
 .\objects\gui_heartrate.o: .\Middle\FreeRTOS\include\task.h
 .\objects\gui_heartrate.o: .\Middle\FreeRTOS\include\list.h
 .\objects\gui_heartrate.o: .\Application\App_GUI\GUI_About\GUI_about.h
-.\objects\gui_heartrate.o: .\Hardware\KEY\key.h
+.\objects\gui_heartrate.o: .\Hardware\MAX30102\max30102.h
 .\objects\gui_heartrate.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\gui_heartrate.o: .\Libraries\CMSIS\core_cm4.h
 .\objects\gui_heartrate.o: .\Libraries\CMSIS\core_cmInstr.h
@@ -169,6 +169,8 @@
 .\objects\gui_heartrate.o: .\Libraries\FWlib\inc\stm32f4xx_dac.h
 .\objects\gui_heartrate.o: .\Libraries\FWlib\inc\stm32f4xx_dcmi.h
 .\objects\gui_heartrate.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
+.\objects\gui_heartrate.o: .\Common\Com_Sys\Com_sys.h
+.\objects\gui_heartrate.o: .\Hardware\KEY\key.h
 .\objects\gui_heartrate.o: .\Common\Com_Delay\Com_Delay.h
 .\objects\gui_heartrate.o: .\Middle\FreeRTOS\include\semphr.h
 .\objects\gui_heartrate.o: .\Middle\FreeRTOS\include\queue.h
