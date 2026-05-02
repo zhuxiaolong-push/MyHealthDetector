@@ -10,6 +10,8 @@
 #include "GUI_Power.h"
 #include "APP_AutoSleep.h"
 #include "backlight.h"
+#include "key.h"
+#include "W25Q16.h"
 
 void App_task_init(void);
 void App_SetPage(uint8_t page);

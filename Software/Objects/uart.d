@@ -2,7 +2,7 @@
 .\objects\uart.o: Driver\Uart\uart.h
 .\objects\uart.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\uart.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\uart.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\uart.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\uart.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -35,4 +35,4 @@
 .\objects\uart.o: .\Libraries\FWlib\inc\stm32f4xx_dac.h
 .\objects\uart.o: .\Libraries\FWlib\inc\stm32f4xx_dcmi.h
 .\objects\uart.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
-.\objects\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\uart.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stddef.h

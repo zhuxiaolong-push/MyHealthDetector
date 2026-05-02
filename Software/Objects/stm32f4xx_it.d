@@ -2,7 +2,7 @@
 .\objects\stm32f4xx_it.o: Libraries\FWlib\stm32f4xx_it.h
 .\objects\stm32f4xx_it.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\stm32f4xx_it.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_it.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f4xx_it.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\stm32f4xx_it.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\stm32f4xx_it.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -36,7 +36,7 @@
 .\objects\stm32f4xx_it.o: .\Libraries\FWlib\inc\stm32f4xx_dcmi.h
 .\objects\stm32f4xx_it.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
 .\objects\stm32f4xx_it.o: .\Middle\FreeRTOS\include\FreeRTOS.h
-.\objects\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\stm32f4xx_it.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\stm32f4xx_it.o: .\User\FreeRTOSConfig.h
 .\objects\stm32f4xx_it.o: .\Middle\FreeRTOS\include\projdefs.h
 .\objects\stm32f4xx_it.o: .\Middle\FreeRTOS\include\portable.h
@@ -52,15 +52,15 @@
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\examples\porting\../../lv_conf.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_types.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_timer.h
-.\objects\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\stm32f4xx_it.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_math.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_mem.h
-.\objects\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\stm32f4xx_it.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_async.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_anim_timeline.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_anim.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_printf.h
-.\objects\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\stm32f4xx_it.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal_disp.h
 .\objects\stm32f4xx_it.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal.h

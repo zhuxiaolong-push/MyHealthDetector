@@ -3,7 +3,7 @@
 .\objects\gt9147.o: .\Common\Com_Sys\Com_sys.h
 .\objects\gt9147.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\gt9147.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\gt9147.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gt9147.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\gt9147.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\gt9147.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\gt9147.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -43,8 +43,8 @@
 .\objects\gt9147.o: Hardware\TOUCH\ctiic.h
 .\objects\gt9147.o: .\Common\Com_Debug\Com_Debug.h
 .\objects\gt9147.o: .\Driver\Uart\uart.h
-.\objects\gt9147.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\gt9147.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\gt9147.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\gt9147.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gt9147.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\gt9147.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
 .\objects\gt9147.o: .\Common\Com_Delay\Com_Delay.h
 .\objects\gt9147.o: .\Hardware\LCD\lcd.h

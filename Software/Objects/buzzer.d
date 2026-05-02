@@ -1,7 +1,7 @@
 .\objects\buzzer.o: Hardware\BUZZER\buzzer.c
 .\objects\buzzer.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\buzzer.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\buzzer.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\buzzer.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\buzzer.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\buzzer.o: .\Libraries\CMSIS\core_cmSimd.h

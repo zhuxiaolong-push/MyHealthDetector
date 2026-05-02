@@ -2,7 +2,7 @@
 .\objects\w25q16.o: .\Driver\SPI\MySPI.h
 .\objects\w25q16.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\w25q16.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\w25q16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\w25q16.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\w25q16.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\w25q16.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\w25q16.o: .\Libraries\CMSIS\core_cmSimd.h

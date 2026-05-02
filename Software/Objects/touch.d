@@ -3,7 +3,7 @@
 .\objects\touch.o: .\Common\Com_Sys\Com_sys.h
 .\objects\touch.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\touch.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\touch.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\touch.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\touch.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\touch.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\touch.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -42,5 +42,5 @@
 .\objects\touch.o: .\Hardware\W25Q16\W25Q16.h
 .\objects\touch.o: .\Hardware\LCD\lcd.h
 .\objects\touch.o: .\Common\Com_Delay\Com_Delay.h
-.\objects\touch.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\touch.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\touch.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\touch.o: D:\keilcore\ARM\ARMCC\Bin\..\include\math.h

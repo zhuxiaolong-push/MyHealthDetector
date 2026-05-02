@@ -1,6 +1,6 @@
 #include "GUI_main.h"
 #include <string.h>
-#include "Key.h"
+#include "Key.h"    /* 新增：确保页面枚举和 Key_SetActivePage 可用 */
 
 #if LV_COLOR_DEPTH != 16 
     #error "LV_COLOR_DEPTH should be 16bit to match SquareLine Studio's settings"
@@ -15,7 +15,7 @@ typedef void (*page_load_func_t)(void);
 /* ==================== 静态变量 ==================== */
 static lv_obj_t *ui_HomePage = NULL;
 static lv_obj_t *status_bar = NULL;
-static lv_obj_t *time_label = NULL;
+static lv_obj_t *name_label = NULL;
 
 /* ==================== 菜单项结构 ==================== */
 typedef struct {
@@ -31,26 +31,27 @@ static void info_panel_init(lv_obj_t *parent);
 
 /* ==================== 菜单按钮事件回调 ==================== */
 static void on_heart_rate_click(lv_event_t *e) {
+    (void)e;
     LV_LOG_USER("Navigate to: Heart Rate Measurement");
-    extern void App_SetPage(uint8_t page);
-    App_SetPage(KEY_PAGE_HEART_RATE);
+    Key_SetActivePage(KEY_PAGE_HEARTRATE);   /* 修改：统一使用 Key_SetActivePage */
     GUI_Load_HeartRatePage();
-
 }
 
 static void on_temperature_click(lv_event_t *e) {
+    (void)e;
     LV_LOG_USER("Navigate to: Temperature Measurement");
-    extern void App_SetPage(uint8_t page);
-    App_SetPage(KEY_PAGE_TEMPERATURE);
+    Key_SetActivePage(KEY_PAGE_TEMPERATURE); /* 修改：统一使用 Key_SetActivePage */
     GUI_Load_TemperaturePage();
 }
 
 static void on_about_click(lv_event_t *e) {
+    (void)e;
     LV_LOG_USER("Navigate to: About Device");
     GUI_Load_AboutPage();
 }
 
 static void on_settings_click(lv_event_t *e) {
+    (void)e;
     LV_LOG_USER("Navigate to: Settings");
     GUI_Load_SettingsPage();
 }
@@ -124,12 +125,12 @@ static void status_bar_init(lv_obj_t *parent)
     lv_obj_set_style_text_color(title_label, COLOR_TEXT_LIGHT, LV_PART_MAIN);
     lv_obj_align(title_label, LV_ALIGN_LEFT_MID, 5, 0);
 
-    /* 右侧：时间 */
-    time_label = lv_label_create(status_bar);
-    lv_label_set_text(time_label, "10:30");
-    lv_obj_set_style_text_font(time_label, FONT_STATUS, LV_PART_MAIN);
-    lv_obj_set_style_text_color(time_label, COLOR_TEXT_GRAY, LV_PART_MAIN);
-    lv_obj_align(time_label, LV_ALIGN_RIGHT_MID, -5, 0);
+    /* 右侧：名称 */
+    name_label = lv_label_create(status_bar);
+    lv_label_set_text(name_label, "Designer:zhuxiaolong");
+    lv_obj_set_style_text_font(name_label, FONT_STATUS, LV_PART_MAIN);
+    lv_obj_set_style_text_color(name_label, COLOR_TEXT_GRAY, LV_PART_MAIN);
+    lv_obj_align(name_label, LV_ALIGN_RIGHT_MID, -5, 0);
 }
 
 /* ==================== 菜单栏实现 ==================== */

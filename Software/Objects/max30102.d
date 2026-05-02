@@ -2,7 +2,7 @@
 .\objects\max30102.o: Hardware\MAX30102\max30102.h
 .\objects\max30102.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\max30102.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\max30102.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\max30102.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\max30102.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\max30102.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\max30102.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -35,6 +35,6 @@
 .\objects\max30102.o: .\Libraries\FWlib\inc\stm32f4xx_dac.h
 .\objects\max30102.o: .\Libraries\FWlib\inc\stm32f4xx_dcmi.h
 .\objects\max30102.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
-.\objects\max30102.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\max30102.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\max30102.o: .\Common\Com_Sys\Com_sys.h
 .\objects\max30102.o: .\Common\Com_Delay\Com_Delay.h

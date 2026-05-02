@@ -15,7 +15,7 @@ void Buzzer_Init(void)
     GPIO_InitTypeDef GPIO_InitStructure;
     
     /* 使能 GPIOA 时钟 */
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
     
     /* 配置 PA3 为推挽输出，速度 50MHz */
     GPIO_InitStructure.GPIO_Pin = BUZZER_PIN;

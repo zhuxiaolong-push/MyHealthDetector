@@ -2,7 +2,7 @@
 .\objects\com_delay.o: Common\Com_Delay\Com_Delay.h
 .\objects\com_delay.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\com_delay.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\com_delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\com_delay.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\com_delay.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\com_delay.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\com_delay.o: .\Libraries\CMSIS\core_cmSimd.h

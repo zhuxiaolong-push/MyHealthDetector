@@ -19,6 +19,7 @@
 #include "task.h"
 #include "W25Q16.h"
 #include "Key.h"
+#include "max30102.h"
 
 
 #define LVGL_LOG_ENABLE 1
@@ -38,7 +39,8 @@ int main(void)
 	SysTick_Config(SystemCoreClock / 1000);
 	delay_init();
     Com_Debug_Init();
-	Power_Start(); 
+	Power_Start();
+    MAX30102_Init();
 	lv_init();	
 	#if LVGL_LOG_ENABLE == 1
 	// 注册日志回调

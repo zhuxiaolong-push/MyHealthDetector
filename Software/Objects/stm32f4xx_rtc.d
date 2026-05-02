@@ -2,7 +2,7 @@
 .\objects\stm32f4xx_rtc.o: .\Libraries\FWlib\inc\stm32f4xx_rtc.h
 .\objects\stm32f4xx_rtc.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\stm32f4xx_rtc.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\stm32f4xx_rtc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_rtc.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f4xx_rtc.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\stm32f4xx_rtc.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\stm32f4xx_rtc.o: .\Libraries\CMSIS\core_cmSimd.h

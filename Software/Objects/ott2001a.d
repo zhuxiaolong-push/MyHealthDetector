@@ -3,7 +3,7 @@
 .\objects\ott2001a.o: .\Common\Com_Sys\Com_sys.h
 .\objects\ott2001a.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\ott2001a.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\ott2001a.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ott2001a.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ott2001a.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\ott2001a.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\ott2001a.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -43,7 +43,7 @@
 .\objects\ott2001a.o: Hardware\TOUCH\ctiic.h
 .\objects\ott2001a.o: .\Common\Com_Debug\Com_Debug.h
 .\objects\ott2001a.o: .\Driver\Uart\uart.h
-.\objects\ott2001a.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\ott2001a.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\ott2001a.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\ott2001a.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ott2001a.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\ott2001a.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
 .\objects\ott2001a.o: .\Common\Com_Delay\Com_Delay.h

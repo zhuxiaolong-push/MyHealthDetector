@@ -2,7 +2,7 @@
 .\objects\mlx90614.o: Hardware\MLX90614\mlx90614.h
 .\objects\mlx90614.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\mlx90614.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\mlx90614.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mlx90614.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\mlx90614.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\mlx90614.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\mlx90614.o: .\Libraries\CMSIS\core_cmSimd.h

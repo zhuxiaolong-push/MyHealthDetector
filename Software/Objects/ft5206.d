@@ -3,7 +3,7 @@
 .\objects\ft5206.o: .\Common\Com_Sys\Com_sys.h
 .\objects\ft5206.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\ft5206.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\ft5206.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ft5206.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ft5206.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\ft5206.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\ft5206.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -44,7 +44,7 @@
 .\objects\ft5206.o: .\Common\Com_Delay\Com_Delay.h
 .\objects\ft5206.o: .\Common\Com_Debug\Com_Debug.h
 .\objects\ft5206.o: .\Driver\Uart\uart.h
-.\objects\ft5206.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\ft5206.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\ft5206.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\ft5206.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ft5206.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\ft5206.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
 .\objects\ft5206.o: .\Hardware\LCD\lcd.h

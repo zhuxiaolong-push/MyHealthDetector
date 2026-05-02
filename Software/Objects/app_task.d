@@ -1,8 +1,8 @@
 .\objects\app_task.o: Application\App_task\App_task.c
 .\objects\app_task.o: Application\App_task\App_task.h
 .\objects\app_task.o: .\Middle\FreeRTOS\include\FreeRTOS.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\app_task.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\app_task.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\app_task.o: .\User\FreeRTOSConfig.h
 .\objects\app_task.o: .\Middle\FreeRTOS\include\projdefs.h
 .\objects\app_task.o: .\Middle\FreeRTOS\include\portable.h
@@ -47,9 +47,9 @@
 .\objects\app_task.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
 .\objects\app_task.o: .\Common\Com_Debug\Com_Debug.h
 .\objects\app_task.o: .\Driver\Uart\uart.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\app_task.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\app_task.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\app_task.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
 .\objects\app_task.o: .\Application\App_GUI\GUI_main\GUI_main.h
 .\objects\app_task.o: .\Middle\LVGL\GUI\lvgl\lvgl.h
 .\objects\app_task.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_log.h
@@ -58,7 +58,7 @@
 .\objects\app_task.o: .\Middle\LVGL\GUI\lvgl\examples\porting\../../lv_conf.h
 .\objects\app_task.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_types.h
 .\objects\app_task.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_timer.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\app_task.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\app_task.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_math.h
 .\objects\app_task.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_mem.h
 .\objects\app_task.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_async.h
@@ -181,11 +181,11 @@
 .\objects\app_task.o: .\Application\App_GUI\GUI_Power\GUI_Power.h
 .\objects\app_task.o: .\Application\App_task\App_task.h
 .\objects\app_task.o: .\Driver\BackLight\backlight.h
+.\objects\app_task.o: .\Hardware\KEY\key.h
+.\objects\app_task.o: .\Hardware\W25Q16\W25Q16.h
 .\objects\app_task.o: .\Hardware\TOUCH\touch.h
 .\objects\app_task.o: .\Common\Com_Sys\Com_sys.h
 .\objects\app_task.o: .\Hardware\TOUCH\ott2001a.h
 .\objects\app_task.o: .\Hardware\TOUCH\gt9147.h
 .\objects\app_task.o: .\Hardware\TOUCH\ft5206.h
-.\objects\app_task.o: .\Hardware\W25Q16\W25Q16.h
 .\objects\app_task.o: .\Common\Com_Delay\Com_Delay.h
-.\objects\app_task.o: .\Hardware\KEY\key.h

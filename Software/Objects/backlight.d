@@ -2,7 +2,7 @@
 .\objects\backlight.o: Driver\BackLight\backlight.h
 .\objects\backlight.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\backlight.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\backlight.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\backlight.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\backlight.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\backlight.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\backlight.o: .\Libraries\CMSIS\core_cmSimd.h

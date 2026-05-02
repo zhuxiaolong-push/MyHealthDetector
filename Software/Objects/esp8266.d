@@ -2,7 +2,7 @@
 .\objects\esp8266.o: Hardware\ESP8266\esp8266.h
 .\objects\esp8266.o: .\Libraries\CMSIS\stm32f4xx.h
 .\objects\esp8266.o: .\Libraries\CMSIS\core_cm4.h
-.\objects\esp8266.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\esp8266.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\esp8266.o: .\Libraries\CMSIS\core_cmInstr.h
 .\objects\esp8266.o: .\Libraries\CMSIS\core_cmFunc.h
 .\objects\esp8266.o: .\Libraries\CMSIS\core_cmSimd.h
@@ -35,5 +35,5 @@
 .\objects\esp8266.o: .\Libraries\FWlib\inc\stm32f4xx_dac.h
 .\objects\esp8266.o: .\Libraries\FWlib\inc\stm32f4xx_dcmi.h
 .\objects\esp8266.o: .\Libraries\FWlib\inc\stm32f4xx_fsmc.h
-.\objects\esp8266.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\esp8266.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\esp8266.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
+.\objects\esp8266.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdio.h

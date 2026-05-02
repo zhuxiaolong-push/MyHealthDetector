@@ -1,9 +1,9 @@
 .\objects\app_autosleep.o: Application\App_AutoSleep\APP_AutoSleep.c
 .\objects\app_autosleep.o: Application\App_AutoSleep\APP_AutoSleep.h
-.\objects\app_autosleep.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\app_autosleep.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\app_autosleep.o: .\Middle\FreeRTOS\include\FreeRTOS.h
-.\objects\app_autosleep.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\app_autosleep.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\app_autosleep.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\app_autosleep.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\app_autosleep.o: .\User\FreeRTOSConfig.h
 .\objects\app_autosleep.o: .\Middle\FreeRTOS\include\projdefs.h
 .\objects\app_autosleep.o: .\Middle\FreeRTOS\include\portable.h
@@ -55,12 +55,12 @@
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_timer.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_math.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_mem.h
-.\objects\app_autosleep.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\app_autosleep.o: D:\keilcore\ARM\ARMCC\Bin\..\include\string.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_async.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_anim_timeline.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_anim.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/misc/lv_printf.h
-.\objects\app_autosleep.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\app_autosleep.o: D:\keilcore\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal_disp.h
 .\objects\app_autosleep.o: .\Middle\LVGL\GUI\lvgl\src/hal/lv_hal.h
